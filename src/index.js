@@ -14,8 +14,8 @@ class Square extends React.Component {
 }
 
 class Board extends React.Component {
-    renderSquare() {
-        return <Square />
+    renderSquare(i) {
+        return <Square value = {i}/>
     }
 
     render() {
@@ -65,3 +65,8 @@ class Game extends React.Component {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Game />);
+
+
+
+
+
